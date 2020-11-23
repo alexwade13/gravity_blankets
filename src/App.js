@@ -12,13 +12,12 @@ function App() {
   products.products.forEach((item, i) => {
     items.push(
       <Slide className="slide" index={i}>
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
         <img 
           className="item" 
           src={item.images.[0].src}
           onMouseOver={e => (e.currentTarget.src =item.images.[1].src)}
           onMouseOut={e => (e.currentTarget.src = item.images.[0].src)}
-          alt="No image?"
-
 
         />
         <div className="name">{item.title.toUpperCase()}</div>
