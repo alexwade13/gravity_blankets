@@ -6,19 +6,6 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
 function App() {
-
-  console.log(products)
-
-  let item_texts = ['GRAVITY BLANKET',
-    'MODERNIST X GRAVITY FLANNEL SHEETS', 
-    'COOLING BLANKET', 
-    'MODERNIST X GRAVITY WEIGHTED ROBE', 
-    'WEIGHTED SLEEP MASK', 
-    'GRAVITY KIDS', 
-    'GRAVITY BAMBOO SHEETS', 
-    'FAUX FUR DUVET COVERS', 
-    'FLANNEL- SHERPA WEIGHTED THROW', 
-    'Z BY GRAVITY WEIGHTED THROW']
   
   let items = []
 
@@ -30,6 +17,7 @@ function App() {
           src={item.images.[0].src}
           onMouseOver={e => (e.currentTarget.src =item.images.[1].src)}
           onMouseOut={e => (e.currentTarget.src = item.images.[0].src)}
+          alt="No image?"
 
 
         />
